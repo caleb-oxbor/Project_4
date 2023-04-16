@@ -22,8 +22,19 @@ class SudokuGenerator:
         else:
             return False
 
+    def valid_in_col(self, col, num):
+        if num in col:
+            return True
+        else:
+            return False
+
     def valid_in_box(self, row_start, col_start, num):
-        pass
+        if num in range[row_start, row_start + 3]:
+            return True
+        elif num in range[col_start, col_start + 3]:
+            return True
+        else:
+            return False
 
     def is_valid(self, row, col, num):
         pass
