@@ -37,7 +37,14 @@ class SudokuGenerator:
             return False
 
     def is_valid(self, row, col, num):
-        pass
+        for i in row:
+            if num in row[i] == 0:
+                return True
+        for j in col:
+            if num in col[j] == 0:
+                return True
+        else:
+            return False
 
     def fill_box(self, row_start, col_start):
         pass
