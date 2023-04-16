@@ -6,16 +6,21 @@ class SudokuGenerator:
     def __init__(self, row_length, removed_cells):
         self.row_length = row_length
         self.removed_cells = removed_cells
-        pass
 
     def get_board(self):
-        pass
+        rows, cols = (9, 9)
+        [[0 for i in range[rows]]for j in range[cols]]
+        return
 
     def print_board(self):
-        pass
+        print(SudokuGenerator.get_board())
+        return
 
     def valid_in_row(self, row, num):
-        pass
+        if num in row:
+            return True
+        else:
+            return False
 
     def valid_in_box(self, row_start, col_start, num):
         pass
@@ -41,6 +46,7 @@ class SudokuGenerator:
 
 def generate_sudoku(size, removed):
     pass
+
 
 class Cell:
     def __init__(self, value, row, col, screen):
